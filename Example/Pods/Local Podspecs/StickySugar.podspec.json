@@ -1,22 +1,24 @@
 {
   "name": "StickySugar",
   "version": "0.1.0",
-  "summary": "A short description of StickySugar.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Mads Kleemann/StickySugar",
+  "summary": "Syntactic sugar untop of AutoLayout to stick views together",
+  "description": "Syntactic sugar untop of AutoLayout to stick views together.\nSticky sugar adds convenience methods on top of auto layout to build and apply constraints to your view in a nice and chainable way.",
+  "homepage": "https://github.com/Kleemann/StickySugar",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Mads Kleemann": "madskleemann@me.com"
+    "Mads Kleemann": ""
   },
   "source": {
-    "git": "https://github.com/Mads Kleemann/StickySugar.git",
+    "git": "https://github.com/Kleemann/StickySugar.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://twitter.com/madskleemann",
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "StickySugar/Classes/**/*"
+  "source_files": "StickySugar/Classes/**/*",
+  "swift_version": "4.2"
 }

@@ -9,34 +9,24 @@
 Pod::Spec.new do |s|
   s.name             = 'StickySugar'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of StickySugar.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'Syntactic sugar untop of AutoLayout to stick views together'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  Syntactic sugar untop of AutoLayout to stick views together.
+  Sticky sugar adds convenience methods on top of auto layout to build and apply constraints to your view in a nice and chainable way.
                        DESC
 
-  s.homepage         = 'https://github.com/Mads Kleemann/StickySugar'
+  s.homepage         = 'https://github.com/Kleemann/StickySugar'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Mads Kleemann' => 'madskleemann@me.com' }
-  s.source           = { :git => 'https://github.com/Mads Kleemann/StickySugar.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Mads Kleemann' => '' }
+  s.source           = { :git => 'https://github.com/Kleemann/StickySugar.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/madskleemann'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'StickySugar/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'StickySugar' => ['StickySugar/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  # Ensure the correct version of Swift is used
+  s.swift_version = '4.2'
 end

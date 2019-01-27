@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0441E82476A9178178DF00C2AEE41E9A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2379EEB1B2E42B0DADE15CB60E65F85 /* QuartzCore.framework */; };
+		04FA38E76475F4A7BAFA73E4F3975F8F /* StickySugar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5071A063FFA964A477C4DA135E858890 /* StickySugar-dummy.m */; };
+		0B7185D9B338B97B5328CD519B5DAF8C /* UIViewController+StackSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B3E54C3449FF3A95F78D16929E3FA8 /* UIViewController+StackSugar.swift */; };
 		0D5E847B5619856E1C22A74EC898F69C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DA36E1CA4C3D87F6E85F737FA483C3 /* Foundation.framework */; };
-		0FCCFEAF5AD9DF0C96677B48218D652B /* StickySugar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A07C568C9C95C4AAE7FC6FEDB646D8BC /* StickySugar-dummy.m */; };
 		12207D3F788DB1335D541D0F7F484FEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DA36E1CA4C3D87F6E85F737FA483C3 /* Foundation.framework */; };
 		163DC390363C339936B3114C72FE6716 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97545C39C4A5EE2631DD9FFECE76A40 /* SwiftSupport.swift */; };
 		1A91950715B264468F4BE22DE60060E5 /* Pods-StickySugar_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71F71D54C3050B42188F9A8A318254B7 /* Pods-StickySugar_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2571ED57576A4148862C7AAFF428980C /* Insets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B613C3D991C9D73C6691B09919E9EB10 /* Insets.swift */; };
+		293FE70E04489FB8943925C925BB3459 /* SingleSugarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB6C943A1270A6642A2831005144617 /* SingleSugarBuilder.swift */; };
+		2A773A3968DB1F77FE447DAB9AD84FF0 /* UIViewController+ScrollSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BD32127BFF7C76E1CAC25EE0E1A540 /* UIViewController+ScrollSugar.swift */; };
 		387D066A1A34ED7DF0F716CB3A8B746D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		459F58959A5C947E77A424BF94098D08 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BCF57E78AE8D656CDAFDAAF01CFD663 /* FBSnapshotTestCase-dummy.m */; };
 		4C022C88B9E8D527B1426B5281756EDE /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */; };
@@ -20,16 +24,22 @@
 		4D600539FC2E29EA7E28A2DA8A8B328C /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E3DB4D092B985E76E227F7F313C6981 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50CF3402650D22B1B4988412C26E7FE5 /* Pods-StickySugar_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D28050C13EC90410331AD9E1E8C18DBB /* Pods-StickySugar_Tests-dummy.m */; };
 		59FD5FAEFCF13CD39358A6F36C50BED8 /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1374B79237CAC07693E99442FBED1F15 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A7308DC925D63F4C7FF6295F2954941 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5CD03DB711EB90B84E47C268B9D3E9 /* ReplaceMe.swift */; };
+		5A2F1A344DF7E33375A9D7BE30E4F7B7 /* SugarBuilder+Sizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2352DF5D500A8C202D2B45094D911D4E /* SugarBuilder+Sizing.swift */; };
 		620002D55F8D093DFB3E88E2CF8DCC60 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCF8FB06D0D8E2640C57D460AB67AF6 /* XCTest.framework */; };
 		63EA4B9CBBAB30A69C2D73693019FDC5 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 432938111B6FF0189EFFEDF2F845B308 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		6B71ACB6D56B970D0B2AD8EE2B79D96F /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */; };
 		6EC17B6986CC7F9EBDF0521AE86F371B /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 39577E2B806B8B2D019998DE60728F63 /* FBSnapshotTestCase.m */; };
+		70626988546BB48C5C644AA2C57B3916 /* SugarBuilder+Aspecting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E388CFB3D9E071FD55C09955633543 /* SugarBuilder+Aspecting.swift */; };
 		73247510D7AD93E5FDBA474B353BF919 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 85E250EF19C5B5671AEC10BEB508D087 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		82F26EA5D2E30AC1F89764D913139B35 /* SugarBuilder+Aligning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E548FC229D7EC89F29B09A56B004E /* SugarBuilder+Aligning.swift */; };
+		83F3145FC0DF22690EEDFC04260FD9AE /* UIVIew+Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3048D2858BEDAC89B56AD51270511C86 /* UIVIew+Sugar.swift */; };
 		8CAC3B81FFAB2342335164D30A3ACCD1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B206F681A10A3CEFD3120DC6A65DCE /* UIKit.framework */; };
 		8DB5906AFB30EC726811381E26E065B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DA36E1CA4C3D87F6E85F737FA483C3 /* Foundation.framework */; };
+		8F3AA9835D2BCD537FB7653159518E20 /* SugarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7CB5E23264735C8CCB46CB45D81150 /* SugarBuilder.swift */; };
+		9A23361DD95D18CA08554FD94899F241 /* Array+Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7036DE653C998376EF57770481D619D7 /* Array+Sugar.swift */; };
 		A30733FA7EA13F95D4E59F42E2AFB166 /* Pods-StickySugar_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CCE01D1A651F021AC2B7DB07C9506D1D /* Pods-StickySugar_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC8B680507F3DF9F4FA29F7DF96E6E0C /* StickySugar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84DAD187EDFB024723091DE59914AAA5 /* StickySugar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC8B680507F3DF9F4FA29F7DF96E6E0C /* StickySugar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9570CC77DC2683B2A8F3BBE6F7A0FC2 /* StickySugar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE14497DBADFD31B8DAE226444A29B12 /* SugarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B51B9009F0F0229E3F633B67AB9A0 /* SugarView.swift */; };
 		AFF108D6E8D891F7B8148CA0158B2A23 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECE81A9AEC1ED1057A9C3C88DBCEBE /* UIApplication+StrictKeyWindow.m */; };
 		B08725BB938AA3AACCA3C8C818FA4CF6 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = E37899BD4B349060AA147E2A3721D3A2 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCDA265400AF5BCF21074C5AF1FD09A8 /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = B9109B8B333B5A1A3E92EFC09EDC10AC /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -38,6 +48,8 @@
 		E2E2BC984CCC1978CB9E22B72258C641 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 052258A488A96C35531FAC73C4F42924 /* FBSnapshotTestController.m */; };
 		E4877E179010E4E588B6E9E61B047B60 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CEF7D6C5E08AB80E58DABC75D882BC /* UIImage+Diff.m */; };
 		EA2C5FBB576DBC67BE3E2F5897704BBF /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBFBDCC891B770A2AC9EF0FB164B751 /* UIImage+Snapshot.m */; };
+		FC5BC8FBDEF840C8E1DBA88584BF65E8 /* SugarBuilder+Centering.swift in Sources */ = {isa = PBXBuildFile; fileRef = A981A7E9D6E3CBD29C875B1C7605DF89 /* SugarBuilder+Centering.swift */; };
+		FE6E0F93840800DE9A1B4F17ED7D2330 /* MultipleSugarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2AFCB1B02083A474668529022B4FF0 /* MultipleSugarBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,44 +77,57 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		018D99C7390A610B0FF05D6D8C155B79 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		052258A488A96C35531FAC73C4F42924 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		1374B79237CAC07693E99442FBED1F15 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		15DACD44E658788580D38B4BA9F7F910 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
 		193AD5F11F1A111AD33F1D5A0ACFE89F /* Pods_StickySugar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StickySugar_Tests.framework; path = "Pods-StickySugar_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F9F3777676F011C2675D3E27A4CEBC1 /* StickySugar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "StickySugar-Info.plist"; sourceTree = "<group>"; };
+		2352DF5D500A8C202D2B45094D911D4E /* SugarBuilder+Sizing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SugarBuilder+Sizing.swift"; path = "StickySugar/Classes/SugarBuilder+Sizing.swift"; sourceTree = "<group>"; };
 		2BCF57E78AE8D656CDAFDAAF01CFD663 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		2EECE81A9AEC1ED1057A9C3C88DBCEBE /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
+		3048D2858BEDAC89B56AD51270511C86 /* UIVIew+Sugar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIVIew+Sugar.swift"; path = "StickySugar/Classes/UIVIew+Sugar.swift"; sourceTree = "<group>"; };
+		33B10028FB91D58B61292B119165241F /* StickySugar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "StickySugar-Info.plist"; sourceTree = "<group>"; };
+		343B51B9009F0F0229E3F633B67AB9A0 /* SugarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SugarView.swift; path = StickySugar/Classes/SugarView.swift; sourceTree = "<group>"; };
+		36AE90347A7CAA4B7C302C91146FBEA3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		36C55D78B720E23EE1930309D3966714 /* Pods-StickySugar_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StickySugar_Example-Info.plist"; sourceTree = "<group>"; };
 		37B206F681A10A3CEFD3120DC6A65DCE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		37F56F6D3724050DE5D99E6B7A070747 /* Pods_StickySugar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StickySugar_Example.framework; path = "Pods-StickySugar_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39577E2B806B8B2D019998DE60728F63 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
-		3CE9CF9914776904027A820F17E98D04 /* StickySugar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = StickySugar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3B69B1F6774339065C31E94D5047A0C6 /* StickySugar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StickySugar.xcconfig; sourceTree = "<group>"; };
 		3DBFBDCC891B770A2AC9EF0FB164B751 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
-		413DEEB97067952381A1D505AA9D0A69 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		432938111B6FF0189EFFEDF2F845B308 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		4CBD8B778E7E4893E03DCFE65F569BD1 /* StickySugar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = StickySugar.framework; path = StickySugar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCF8FB06D0D8E2640C57D460AB67AF6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4FB6C943A1270A6642A2831005144617 /* SingleSugarBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SingleSugarBuilder.swift; path = StickySugar/Classes/SingleSugarBuilder.swift; sourceTree = "<group>"; };
+		5071A063FFA964A477C4DA135E858890 /* StickySugar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StickySugar-dummy.m"; sourceTree = "<group>"; };
 		55E0469CF078FABE18DB37A8FD15697E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
+		56B3E54C3449FF3A95F78D16929E3FA8 /* UIViewController+StackSugar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+StackSugar.swift"; path = "StickySugar/Classes/UIViewController+StackSugar.swift"; sourceTree = "<group>"; };
 		58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
+		5A2AFCB1B02083A474668529022B4FF0 /* MultipleSugarBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipleSugarBuilder.swift; path = StickySugar/Classes/MultipleSugarBuilder.swift; sourceTree = "<group>"; };
+		7036DE653C998376EF57770481D619D7 /* Array+Sugar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Sugar.swift"; path = "StickySugar/Classes/Array+Sugar.swift"; sourceTree = "<group>"; };
 		71F71D54C3050B42188F9A8A318254B7 /* Pods-StickySugar_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StickySugar_Example-umbrella.h"; sourceTree = "<group>"; };
 		7A5297B06DA3329EF3359A1DC2FC15D1 /* Pods-StickySugar_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StickySugar_Tests-Info.plist"; sourceTree = "<group>"; };
 		7C033B8AF7D1F24DA1A8B292F6FD7550 /* Pods-StickySugar_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StickySugar_Tests.modulemap"; sourceTree = "<group>"; };
-		7D5CD03DB711EB90B84E47C268B9D3E9 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = StickySugar/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		7E3DB4D092B985E76E227F7F313C6981 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		832DBFEDA0C35263CE92221CFC93A8BC /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84476D453B27B448F54FC53FC5E1625E /* Pods-StickySugar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StickySugar_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		84DAD187EDFB024723091DE59914AAA5 /* StickySugar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StickySugar-umbrella.h"; sourceTree = "<group>"; };
 		85E250EF19C5B5671AEC10BEB508D087 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
-		A07C568C9C95C4AAE7FC6FEDB646D8BC /* StickySugar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StickySugar-dummy.m"; sourceTree = "<group>"; };
+		93C2C21193B044A0CBA7B23233A69000 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9A4E548FC229D7EC89F29B09A56B004E /* SugarBuilder+Aligning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SugarBuilder+Aligning.swift"; path = "StickySugar/Classes/SugarBuilder+Aligning.swift"; sourceTree = "<group>"; };
+		9D25AD59251D72DE2A71C180BF12D418 /* StickySugar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = StickySugar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E0B8689006D24D4362B42FA443B8BBC /* StickySugar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = StickySugar.modulemap; sourceTree = "<group>"; };
+		A2BD32127BFF7C76E1CAC25EE0E1A540 /* UIViewController+ScrollSugar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+ScrollSugar.swift"; path = "StickySugar/Classes/UIViewController+ScrollSugar.swift"; sourceTree = "<group>"; };
+		A981A7E9D6E3CBD29C875B1C7605DF89 /* SugarBuilder+Centering.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SugarBuilder+Centering.swift"; path = "StickySugar/Classes/SugarBuilder+Centering.swift"; sourceTree = "<group>"; };
 		AA6C4ABA9B82FEBE9E60A28FE6BED888 /* Pods-StickySugar_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StickySugar_Example-dummy.m"; sourceTree = "<group>"; };
 		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B613C3D991C9D73C6691B09919E9EB10 /* Insets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Insets.swift; path = StickySugar/Classes/Insets.swift; sourceTree = "<group>"; };
+		B7E388CFB3D9E071FD55C09955633543 /* SugarBuilder+Aspecting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SugarBuilder+Aspecting.swift"; path = "StickySugar/Classes/SugarBuilder+Aspecting.swift"; sourceTree = "<group>"; };
 		B7F3DCA8C8B291A761D5251C85C45675 /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
 		B9109B8B333B5A1A3E92EFC09EDC10AC /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		B9CEF7D6C5E08AB80E58DABC75D882BC /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		B9D0E21C070E60F4BAE483FF3F37D8E7 /* Pods-StickySugar_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StickySugar_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		BA7CB5E23264735C8CCB46CB45D81150 /* SugarBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SugarBuilder.swift; path = StickySugar/Classes/SugarBuilder.swift; sourceTree = "<group>"; };
 		BD0CD036AD68EB07F6DCA9F0FE96534A /* Pods-StickySugar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StickySugar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C131BC23B1FF19E59BF8651A4F1DD969 /* Pods-StickySugar_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StickySugar_Example-frameworks.sh"; sourceTree = "<group>"; };
 		C1A31BC004CD0B1E397BE82E624AB94A /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
@@ -111,16 +136,15 @@
 		C87DEB6B26B0C968D3F9D187DFA234CB /* Pods-StickySugar_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StickySugar_Example.modulemap"; sourceTree = "<group>"; };
 		C88394602277CE1EAC8FDCA9AA216C59 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		C8C37311D837CED4A1C7C9D0FDFB33B9 /* Pods-StickySugar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StickySugar_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C9570CC77DC2683B2A8F3BBE6F7A0FC2 /* StickySugar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StickySugar-umbrella.h"; sourceTree = "<group>"; };
 		CAD0DEF9FFD4465D1ACF2C695DC93471 /* Pods-StickySugar_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StickySugar_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		CCE01D1A651F021AC2B7DB07C9506D1D /* Pods-StickySugar_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-StickySugar_Tests-umbrella.h"; sourceTree = "<group>"; };
-		D01DEAB2DAE1DF4FDD1550970109D0FB /* StickySugar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StickySugar-prefix.pch"; sourceTree = "<group>"; };
 		D28050C13EC90410331AD9E1E8C18DBB /* Pods-StickySugar_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StickySugar_Tests-dummy.m"; sourceTree = "<group>"; };
 		D97545C39C4A5EE2631DD9FFECE76A40 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		DB8631D40E9F5802FE7F60D359653FE6 /* Pods-StickySugar_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StickySugar_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		E058FDCF7AF683C203558E4BCE89CDE3 /* Pods-StickySugar_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StickySugar_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E37899BD4B349060AA147E2A3721D3A2 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
-		E3FBB342A55D0F1BF62538E6B4CE2098 /* StickySugar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StickySugar.xcconfig; sourceTree = "<group>"; };
-		F66DCB9910BF421246983E9C3700EDFD /* StickySugar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = StickySugar.modulemap; sourceTree = "<group>"; };
+		F42C47BD64E44675D5235CFEE3545DE1 /* StickySugar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StickySugar-prefix.pch"; sourceTree = "<group>"; };
 		F6DA36E1CA4C3D87F6E85F737FA483C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		F7A7D42E3F2F9C566ABE1DCDCFEFE7DB /* Pods-StickySugar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StickySugar_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,16 +194,6 @@
 				77E6A3533BFFC5453A29188F8955E61A /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		17EBD1C3DA04E761FF3EC693C77D507B /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				018D99C7390A610B0FF05D6D8C155B79 /* LICENSE */,
-				413DEEB97067952381A1D505AA9D0A69 /* README.md */,
-				3CE9CF9914776904027A820F17E98D04 /* StickySugar.podspec */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		2287B5EBEAA3C332F8DB9A1E61F5B097 /* FBSnapshotTestCase */ = {
@@ -235,6 +249,29 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		595D5111F7BC1F5B932285352F2A3F0E /* StickySugar */ = {
+			isa = PBXGroup;
+			children = (
+				7036DE653C998376EF57770481D619D7 /* Array+Sugar.swift */,
+				B613C3D991C9D73C6691B09919E9EB10 /* Insets.swift */,
+				5A2AFCB1B02083A474668529022B4FF0 /* MultipleSugarBuilder.swift */,
+				4FB6C943A1270A6642A2831005144617 /* SingleSugarBuilder.swift */,
+				BA7CB5E23264735C8CCB46CB45D81150 /* SugarBuilder.swift */,
+				9A4E548FC229D7EC89F29B09A56B004E /* SugarBuilder+Aligning.swift */,
+				B7E388CFB3D9E071FD55C09955633543 /* SugarBuilder+Aspecting.swift */,
+				A981A7E9D6E3CBD29C875B1C7605DF89 /* SugarBuilder+Centering.swift */,
+				2352DF5D500A8C202D2B45094D911D4E /* SugarBuilder+Sizing.swift */,
+				343B51B9009F0F0229E3F633B67AB9A0 /* SugarView.swift */,
+				3048D2858BEDAC89B56AD51270511C86 /* UIVIew+Sugar.swift */,
+				A2BD32127BFF7C76E1CAC25EE0E1A540 /* UIViewController+ScrollSugar.swift */,
+				56B3E54C3449FF3A95F78D16929E3FA8 /* UIViewController+StackSugar.swift */,
+				C42E01C221A6D8BDB336A231BCF7B3E0 /* Pod */,
+				7E4E47ECF2E981B583F93CE3B7E6CFBD /* Support Files */,
+			);
+			name = StickySugar;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		77E6A3533BFFC5453A29188F8955E61A /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,7 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */,
-				96D26F7B9CF35F52CFF4EE6E2DEB01EF /* Development Pods */,
+				CE8AAB3CBFBDBA19159EFACFA62361B5 /* Development Pods */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
 				FBD2D672921284E66F309CA3462F84D6 /* Pods */,
 				4A9C1E3ADDB68185E44AD1F26C9877FF /* Products */,
@@ -275,26 +312,18 @@
 			);
 			sourceTree = "<group>";
 		};
-		8E4533431217716864BD8813AD30F50B /* Support Files */ = {
+		7E4E47ECF2E981B583F93CE3B7E6CFBD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F66DCB9910BF421246983E9C3700EDFD /* StickySugar.modulemap */,
-				E3FBB342A55D0F1BF62538E6B4CE2098 /* StickySugar.xcconfig */,
-				A07C568C9C95C4AAE7FC6FEDB646D8BC /* StickySugar-dummy.m */,
-				1F9F3777676F011C2675D3E27A4CEBC1 /* StickySugar-Info.plist */,
-				D01DEAB2DAE1DF4FDD1550970109D0FB /* StickySugar-prefix.pch */,
-				84DAD187EDFB024723091DE59914AAA5 /* StickySugar-umbrella.h */,
+				9E0B8689006D24D4362B42FA443B8BBC /* StickySugar.modulemap */,
+				3B69B1F6774339065C31E94D5047A0C6 /* StickySugar.xcconfig */,
+				5071A063FFA964A477C4DA135E858890 /* StickySugar-dummy.m */,
+				33B10028FB91D58B61292B119165241F /* StickySugar-Info.plist */,
+				F42C47BD64E44675D5235CFEE3545DE1 /* StickySugar-prefix.pch */,
+				C9570CC77DC2683B2A8F3BBE6F7A0FC2 /* StickySugar-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/StickySugar";
-			sourceTree = "<group>";
-		};
-		96D26F7B9CF35F52CFF4EE6E2DEB01EF /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B37DEB6EC7F1790910C53C07E20D9FE2 /* StickySugar */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		97264A030FB5453E9990B91EBC23D882 /* Targets Support Files */ = {
@@ -314,15 +343,22 @@
 			name = SwiftSupport;
 			sourceTree = "<group>";
 		};
-		B37DEB6EC7F1790910C53C07E20D9FE2 /* StickySugar */ = {
+		C42E01C221A6D8BDB336A231BCF7B3E0 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				7D5CD03DB711EB90B84E47C268B9D3E9 /* ReplaceMe.swift */,
-				17EBD1C3DA04E761FF3EC693C77D507B /* Pod */,
-				8E4533431217716864BD8813AD30F50B /* Support Files */,
+				36AE90347A7CAA4B7C302C91146FBEA3 /* LICENSE */,
+				93C2C21193B044A0CBA7B23233A69000 /* README.md */,
+				9D25AD59251D72DE2A71C180BF12D418 /* StickySugar.podspec */,
 			);
-			name = StickySugar;
-			path = ../..;
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		CE8AAB3CBFBDBA19159EFACFA62361B5 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				595D5111F7BC1F5B932285352F2A3F0E /* StickySugar */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		F35791481CAFDD8E7715AE1B44687328 /* Core */ = {
@@ -404,7 +440,7 @@
 			buildConfigurationList = A0A90179048BEA8A9D6B5B6A8C42E7EA /* Build configuration list for PBXNativeTarget "StickySugar" */;
 			buildPhases = (
 				5DA906012D504114C7C0BD4B29FA49FF /* Headers */,
-				E8DCB97334D41435C6D4EAC3F68306BD /* Sources */,
+				CC0C34DEF37D8DB25C296A2A6FBDA8B7 /* Sources */,
 				64D1EFA629DF727E635B137DC31E2AFC /* Frameworks */,
 				47F783F66D12452564FFCF039697D97A /* Resources */,
 			);
@@ -567,12 +603,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E8DCB97334D41435C6D4EAC3F68306BD /* Sources */ = {
+		CC0C34DEF37D8DB25C296A2A6FBDA8B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A7308DC925D63F4C7FF6295F2954941 /* ReplaceMe.swift in Sources */,
-				0FCCFEAF5AD9DF0C96677B48218D652B /* StickySugar-dummy.m in Sources */,
+				9A23361DD95D18CA08554FD94899F241 /* Array+Sugar.swift in Sources */,
+				2571ED57576A4148862C7AAFF428980C /* Insets.swift in Sources */,
+				FE6E0F93840800DE9A1B4F17ED7D2330 /* MultipleSugarBuilder.swift in Sources */,
+				293FE70E04489FB8943925C925BB3459 /* SingleSugarBuilder.swift in Sources */,
+				04FA38E76475F4A7BAFA73E4F3975F8F /* StickySugar-dummy.m in Sources */,
+				82F26EA5D2E30AC1F89764D913139B35 /* SugarBuilder+Aligning.swift in Sources */,
+				70626988546BB48C5C644AA2C57B3916 /* SugarBuilder+Aspecting.swift in Sources */,
+				FC5BC8FBDEF840C8E1DBA88584BF65E8 /* SugarBuilder+Centering.swift in Sources */,
+				5A2F1A344DF7E33375A9D7BE30E4F7B7 /* SugarBuilder+Sizing.swift in Sources */,
+				8F3AA9835D2BCD537FB7653159518E20 /* SugarBuilder.swift in Sources */,
+				AE14497DBADFD31B8DAE226444A29B12 /* SugarView.swift in Sources */,
+				83F3145FC0DF22690EEDFC04260FD9AE /* UIVIew+Sugar.swift in Sources */,
+				2A773A3968DB1F77FE447DAB9AD84FF0 /* UIViewController+ScrollSugar.swift in Sources */,
+				0B7185D9B338B97B5328CD519B5DAF8C /* UIViewController+StackSugar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,7 +648,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		5153DC2E9BB4F6D6F85AF7C0A4A2A27F /* Debug */ = {
+		08B0394D5F17A9F046DC0719C25BA452 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -651,7 +699,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -661,6 +709,73 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1F3B9674637998B2585F52BD75DFD55A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7A7D42E3F2F9C566ABE1DCDCFEFE7DB /* Pods-StickySugar_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-StickySugar_Example/Pods-StickySugar_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StickySugar_Example/Pods-StickySugar_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		230F60BF1D4168E3DE91894822D81A93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84476D453B27B448F54FC53FC5E1625E /* Pods-StickySugar_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-StickySugar_Example/Pods-StickySugar_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StickySugar_Example/Pods-StickySugar_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -695,7 +810,169 @@
 			};
 			name = Debug;
 		};
-		6A949A208667F02694AF29D5DCC8D4BF /* Release */ = {
+		6C8E7688CEF5FE7728985AEB4F2568CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B69B1F6774339065C31E94D5047A0C6 /* StickySugar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/StickySugar/StickySugar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/StickySugar/StickySugar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/StickySugar/StickySugar.modulemap";
+				PRODUCT_MODULE_NAME = StickySugar;
+				PRODUCT_NAME = StickySugar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		82F50E8043B6F265D80398CEBB5E866F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7F3DCA8C8B291A761D5251C85C45675 /* FBSnapshotTestCase.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		934D37C9A240EC2C2B8E4A1F8C89539D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8C37311D837CED4A1C7C9D0FDFB33B9 /* Pods-StickySugar_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-StickySugar_Tests/Pods-StickySugar_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StickySugar_Tests/Pods-StickySugar_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA823E2746ED6B8F9320F94FE22E5901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B69B1F6774339065C31E94D5047A0C6 /* StickySugar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/StickySugar/StickySugar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/StickySugar/StickySugar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/StickySugar/StickySugar.modulemap";
+				PRODUCT_MODULE_NAME = StickySugar;
+				PRODUCT_NAME = StickySugar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4921A24001D1E1D9D6782605D663254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD0CD036AD68EB07F6DCA9F0FE96534A /* Pods-StickySugar_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-StickySugar_Tests/Pods-StickySugar_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-StickySugar_Tests/Pods-StickySugar_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E82C56363775B4EF468FF2AD9A2F5414 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -743,7 +1020,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -755,243 +1032,14 @@
 			};
 			name = Release;
 		};
-		7D3552A5AA777CD2EC38F10127A45E2E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84476D453B27B448F54FC53FC5E1625E /* Pods-StickySugar_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-StickySugar_Example/Pods-StickySugar_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-StickySugar_Example/Pods-StickySugar_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		82F50E8043B6F265D80398CEBB5E866F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7F3DCA8C8B291A761D5251C85C45675 /* FBSnapshotTestCase.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
-				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
-				PRODUCT_NAME = FBSnapshotTestCase;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A6254DFC3A2B200E29392C713AA056A7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7A7D42E3F2F9C566ABE1DCDCFEFE7DB /* Pods-StickySugar_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-StickySugar_Example/Pods-StickySugar_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-StickySugar_Example/Pods-StickySugar_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A930F2EEF2B3311773D19BBF61C91897 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3FBB342A55D0F1BF62538E6B4CE2098 /* StickySugar.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/StickySugar/StickySugar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/StickySugar/StickySugar-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/StickySugar/StickySugar.modulemap";
-				PRODUCT_MODULE_NAME = StickySugar;
-				PRODUCT_NAME = StickySugar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D5A2C823B32FD4ECA137587AD32AA23F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3FBB342A55D0F1BF62538E6B4CE2098 /* StickySugar.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/StickySugar/StickySugar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/StickySugar/StickySugar-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/StickySugar/StickySugar.modulemap";
-				PRODUCT_MODULE_NAME = StickySugar;
-				PRODUCT_NAME = StickySugar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E5EF2319D87D938294BF8DBE40251576 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8C37311D837CED4A1C7C9D0FDFB33B9 /* Pods-StickySugar_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-StickySugar_Tests/Pods-StickySugar_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-StickySugar_Tests/Pods-StickySugar_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E9E29D61F40A4130F0E0EC9CAEAC9722 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD0CD036AD68EB07F6DCA9F0FE96534A /* Pods-StickySugar_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-StickySugar_Tests/Pods-StickySugar_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-StickySugar_Tests/Pods-StickySugar_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5153DC2E9BB4F6D6F85AF7C0A4A2A27F /* Debug */,
-				6A949A208667F02694AF29D5DCC8D4BF /* Release */,
+				08B0394D5F17A9F046DC0719C25BA452 /* Debug */,
+				E82C56363775B4EF468FF2AD9A2F5414 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1008,8 +1056,8 @@
 		A0A90179048BEA8A9D6B5B6A8C42E7EA /* Build configuration list for PBXNativeTarget "StickySugar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A930F2EEF2B3311773D19BBF61C91897 /* Debug */,
-				D5A2C823B32FD4ECA137587AD32AA23F /* Release */,
+				CA823E2746ED6B8F9320F94FE22E5901 /* Debug */,
+				6C8E7688CEF5FE7728985AEB4F2568CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1017,8 +1065,8 @@
 		B1AD8B4DCB2C55AA5D9F40A68558887E /* Build configuration list for PBXNativeTarget "Pods-StickySugar_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E9E29D61F40A4130F0E0EC9CAEAC9722 /* Debug */,
-				E5EF2319D87D938294BF8DBE40251576 /* Release */,
+				E4921A24001D1E1D9D6782605D663254 /* Debug */,
+				934D37C9A240EC2C2B8E4A1F8C89539D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1026,8 +1074,8 @@
 		FE7D92B1ED641D44E5CDD035E45DA948 /* Build configuration list for PBXNativeTarget "Pods-StickySugar_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7D3552A5AA777CD2EC38F10127A45E2E /* Debug */,
-				A6254DFC3A2B200E29392C713AA056A7 /* Release */,
+				230F60BF1D4168E3DE91894822D81A93 /* Debug */,
+				1F3B9674637998B2585F52BD75DFD55A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
