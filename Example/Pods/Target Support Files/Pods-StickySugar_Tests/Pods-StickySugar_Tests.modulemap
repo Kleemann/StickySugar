@@ -1,0 +1,6 @@
+framework module Pods_StickySugar_Tests {
+  umbrella header "Pods-StickySugar_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
