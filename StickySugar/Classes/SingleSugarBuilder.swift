@@ -57,4 +57,16 @@ public class SingleSugarBuilder<ViewType: UIView>: SugarBuilder<ViewType> {
         configuration(workingView)
         return self
     }
+    
+    @discardableResult
+    public func relation(_ relation: NSLayoutConstraint.Relation) -> SingleSugarBuilder<ViewType> {
+  
+        guard let first = lastSugar.firstItem, let second = lastSugar.secondItem else {
+            return self
+        }
+        
+        let cnst = NSLayoutConstraint(item: first, attribute: lastSugar.firstAttribute, relatedBy: relation, toItem: second, attribute: lastSugar.secondAttribute, multiplier: lastSugar.multiplier, constant: lastSugar.multiplier)
+        
+        return SingleSugarBuilder(workingView, lastSugar: cnst)
+    }
 }
