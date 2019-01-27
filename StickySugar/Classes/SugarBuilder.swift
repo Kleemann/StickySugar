@@ -123,22 +123,22 @@ public class SugarBuilder<ViewType: UIView> {
     }
     
     @discardableResult
-    public func stickTopToBottom(of view: UIView, insets: Insets) -> SingleSugarBuilder<ViewType> {
+    public func stickTopToBottom(of view: UIView, insets: Insets = .zero) -> SingleSugarBuilder<ViewType> {
         return stickToEdge(edge: .bottom, ofView: view, insets: insets)
     }
     
     @discardableResult
-    public func stickBottomToTop(of view: UIView, insets: Insets) -> SingleSugarBuilder<ViewType> {
+    public func stickBottomToTop(of view: UIView, insets: Insets = .zero) -> SingleSugarBuilder<ViewType> {
         return stickToEdge(edge: .top, ofView: view, insets: insets)
     }
     
     @discardableResult
-    public func stickLeadingToTrailing(of view: UIView, insets: Insets) -> SingleSugarBuilder<ViewType> {
+    public func stickLeadingToTrailing(of view: UIView, insets: Insets = .zero) -> SingleSugarBuilder<ViewType> {
         return stickToEdge(edge: .trailing, ofView: view, insets: insets)
     }
     
     @discardableResult
-    public func stickTrailingToLeading(of view: UIView, insets: Insets) -> SingleSugarBuilder<ViewType> {
+    public func stickTrailingToLeading(of view: UIView, insets: Insets = .zero) -> SingleSugarBuilder<ViewType> {
         return stickToEdge(edge: .leading, ofView: view, insets: insets)
     }
 }
