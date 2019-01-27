@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'StickySugar'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'Syntactic sugar untop of AutoLayout to stick views together'
 
   s.description      = <<-DESC
