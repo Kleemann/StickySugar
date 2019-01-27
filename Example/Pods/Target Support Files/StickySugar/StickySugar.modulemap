@@ -1,0 +1,6 @@
+framework module StickySugar {
+  umbrella header "StickySugar-umbrella.h"
+
+  export *
+  module * { export * }
+}

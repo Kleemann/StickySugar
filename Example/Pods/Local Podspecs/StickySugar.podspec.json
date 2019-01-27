@@ -1,0 +1,22 @@
+{
+  "name": "StickySugar",
+  "version": "0.1.0",
+  "summary": "A short description of StickySugar.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Mads Kleemann/StickySugar",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Mads Kleemann": "madskleemann@me.com"
+  },
+  "source": {
+    "git": "https://github.com/Mads Kleemann/StickySugar.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "StickySugar/Classes/**/*"
+}
