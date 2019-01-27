@@ -1,15 +1,10 @@
 # StickySugar
 
-[![CI Status](https://img.shields.io/travis/Mads Kleemann/StickySugar.svg?style=flat)](https://travis-ci.org/Mads Kleemann/StickySugar)
-[![Version](https://img.shields.io/cocoapods/v/StickySugar.svg?style=flat)](https://cocoapods.org/pods/StickySugar)
-[![License](https://img.shields.io/cocoapods/l/StickySugar.svg?style=flat)](https://cocoapods.org/pods/StickySugar)
-[![Platform](https://img.shields.io/cocoapods/p/StickySugar.svg?style=flat)](https://cocoapods.org/pods/StickySugar)
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+Syntactic sugar untop of AutoLayout to stick views together.
+Sticky sugar adds convenience methods on top of auto layout to build and apply constraints to your view in a nice and chainable way.
 
 ## Requirements
+iOS >= 9
 
 ## Installation
 
@@ -22,7 +17,7 @@ pod 'StickySugar'
 
 ## Author
 
-Mads Kleemann, madskleemann@me.com
+[Mads Kleemann](http://twitter.com/madskleemann)
 
 ## License
 
