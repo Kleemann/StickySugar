@@ -1,6 +1,6 @@
 //
 //  Array+Sugar.swift
-//  FBSnapshotTestCase
+//  StickySugar
 //
 //  Created by Mads Kleemann on 27/01/2019.
 //

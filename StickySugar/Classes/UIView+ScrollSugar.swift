@@ -1,6 +1,6 @@
 //
 //  UIView+ScrollSugar.swift
-//  FBSnapshotTestCase
+//  StickySugar
 //
 //  Created by Mads Kleemann on 03/02/2019.
 //
