@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0441E82476A9178178DF00C2AEE41E9A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2379EEB1B2E42B0DADE15CB60E65F85 /* QuartzCore.framework */; };
 		04FA38E76475F4A7BAFA73E4F3975F8F /* StickySugar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5071A063FFA964A477C4DA135E858890 /* StickySugar-dummy.m */; };
-		0B7185D9B338B97B5328CD519B5DAF8C /* UIViewController+StackSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B3E54C3449FF3A95F78D16929E3FA8 /* UIViewController+StackSugar.swift */; };
 		0D5E847B5619856E1C22A74EC898F69C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DA36E1CA4C3D87F6E85F737FA483C3 /* Foundation.framework */; };
 		12207D3F788DB1335D541D0F7F484FEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DA36E1CA4C3D87F6E85F737FA483C3 /* Foundation.framework */; };
 		163DC390363C339936B3114C72FE6716 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97545C39C4A5EE2631DD9FFECE76A40 /* SwiftSupport.swift */; };
@@ -44,6 +43,9 @@
 		B08725BB938AA3AACCA3C8C818FA4CF6 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = E37899BD4B349060AA147E2A3721D3A2 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCDA265400AF5BCF21074C5AF1FD09A8 /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = B9109B8B333B5A1A3E92EFC09EDC10AC /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DA64B6366961FF17AF02B158AD86EB21 /* Pods-StickySugar_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6C4ABA9B82FEBE9E60A28FE6BED888 /* Pods-StickySugar_Example-dummy.m */; };
+		E174449E22072EB3006E2063 /* UIView+StackSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E174449C22072E86006E2063 /* UIView+StackSugar.swift */; };
+		E17444A322072FA5006E2063 /* UIView+ScrollSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17444A122072F96006E2063 /* UIView+ScrollSugar.swift */; };
+		E17444A422073032006E2063 /* UIViewController+StackSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E174449F22072F84006E2063 /* UIViewController+StackSugar.swift */; };
 		E2C81B6D97309098973C79A18157E6A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DA36E1CA4C3D87F6E85F737FA483C3 /* Foundation.framework */; };
 		E2E2BC984CCC1978CB9E22B72258C641 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 052258A488A96C35531FAC73C4F42924 /* FBSnapshotTestController.m */; };
 		E4877E179010E4E588B6E9E61B047B60 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CEF7D6C5E08AB80E58DABC75D882BC /* UIImage+Diff.m */; };
@@ -81,28 +83,27 @@
 		0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		1374B79237CAC07693E99442FBED1F15 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		15DACD44E658788580D38B4BA9F7F910 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
-		193AD5F11F1A111AD33F1D5A0ACFE89F /* Pods_StickySugar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StickySugar_Tests.framework; path = "Pods-StickySugar_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		193AD5F11F1A111AD33F1D5A0ACFE89F /* Pods_StickySugar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StickySugar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2352DF5D500A8C202D2B45094D911D4E /* SugarBuilder+Sizing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SugarBuilder+Sizing.swift"; path = "StickySugar/Classes/SugarBuilder+Sizing.swift"; sourceTree = "<group>"; };
 		2BCF57E78AE8D656CDAFDAAF01CFD663 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		2EECE81A9AEC1ED1057A9C3C88DBCEBE /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		3048D2858BEDAC89B56AD51270511C86 /* UIVIew+Sugar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIVIew+Sugar.swift"; path = "StickySugar/Classes/UIVIew+Sugar.swift"; sourceTree = "<group>"; };
 		33B10028FB91D58B61292B119165241F /* StickySugar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "StickySugar-Info.plist"; sourceTree = "<group>"; };
 		343B51B9009F0F0229E3F633B67AB9A0 /* SugarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SugarView.swift; path = StickySugar/Classes/SugarView.swift; sourceTree = "<group>"; };
-		36AE90347A7CAA4B7C302C91146FBEA3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		36AE90347A7CAA4B7C302C91146FBEA3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		36C55D78B720E23EE1930309D3966714 /* Pods-StickySugar_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StickySugar_Example-Info.plist"; sourceTree = "<group>"; };
 		37B206F681A10A3CEFD3120DC6A65DCE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		37F56F6D3724050DE5D99E6B7A070747 /* Pods_StickySugar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_StickySugar_Example.framework; path = "Pods-StickySugar_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F56F6D3724050DE5D99E6B7A070747 /* Pods_StickySugar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StickySugar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39577E2B806B8B2D019998DE60728F63 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		3B69B1F6774339065C31E94D5047A0C6 /* StickySugar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StickySugar.xcconfig; sourceTree = "<group>"; };
 		3DBFBDCC891B770A2AC9EF0FB164B751 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		432938111B6FF0189EFFEDF2F845B308 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
-		4CBD8B778E7E4893E03DCFE65F569BD1 /* StickySugar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = StickySugar.framework; path = StickySugar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CBD8B778E7E4893E03DCFE65F569BD1 /* StickySugar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StickySugar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCF8FB06D0D8E2640C57D460AB67AF6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4FB6C943A1270A6642A2831005144617 /* SingleSugarBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SingleSugarBuilder.swift; path = StickySugar/Classes/SingleSugarBuilder.swift; sourceTree = "<group>"; };
 		5071A063FFA964A477C4DA135E858890 /* StickySugar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StickySugar-dummy.m"; sourceTree = "<group>"; };
 		55E0469CF078FABE18DB37A8FD15697E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
-		56B3E54C3449FF3A95F78D16929E3FA8 /* UIViewController+StackSugar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+StackSugar.swift"; path = "StickySugar/Classes/UIViewController+StackSugar.swift"; sourceTree = "<group>"; };
 		58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		5A2AFCB1B02083A474668529022B4FF0 /* MultipleSugarBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipleSugarBuilder.swift; path = StickySugar/Classes/MultipleSugarBuilder.swift; sourceTree = "<group>"; };
 		7036DE653C998376EF57770481D619D7 /* Array+Sugar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Sugar.swift"; path = "StickySugar/Classes/Array+Sugar.swift"; sourceTree = "<group>"; };
@@ -110,17 +111,17 @@
 		7A5297B06DA3329EF3359A1DC2FC15D1 /* Pods-StickySugar_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-StickySugar_Tests-Info.plist"; sourceTree = "<group>"; };
 		7C033B8AF7D1F24DA1A8B292F6FD7550 /* Pods-StickySugar_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-StickySugar_Tests.modulemap"; sourceTree = "<group>"; };
 		7E3DB4D092B985E76E227F7F313C6981 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
-		832DBFEDA0C35263CE92221CFC93A8BC /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		832DBFEDA0C35263CE92221CFC93A8BC /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84476D453B27B448F54FC53FC5E1625E /* Pods-StickySugar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-StickySugar_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		85E250EF19C5B5671AEC10BEB508D087 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
-		93C2C21193B044A0CBA7B23233A69000 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		93C2C21193B044A0CBA7B23233A69000 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9A4E548FC229D7EC89F29B09A56B004E /* SugarBuilder+Aligning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SugarBuilder+Aligning.swift"; path = "StickySugar/Classes/SugarBuilder+Aligning.swift"; sourceTree = "<group>"; };
-		9D25AD59251D72DE2A71C180BF12D418 /* StickySugar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = StickySugar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D25AD59251D72DE2A71C180BF12D418 /* StickySugar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = StickySugar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E0B8689006D24D4362B42FA443B8BBC /* StickySugar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = StickySugar.modulemap; sourceTree = "<group>"; };
 		A2BD32127BFF7C76E1CAC25EE0E1A540 /* UIViewController+ScrollSugar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+ScrollSugar.swift"; path = "StickySugar/Classes/UIViewController+ScrollSugar.swift"; sourceTree = "<group>"; };
 		A981A7E9D6E3CBD29C875B1C7605DF89 /* SugarBuilder+Centering.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SugarBuilder+Centering.swift"; path = "StickySugar/Classes/SugarBuilder+Centering.swift"; sourceTree = "<group>"; };
 		AA6C4ABA9B82FEBE9E60A28FE6BED888 /* Pods-StickySugar_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-StickySugar_Example-dummy.m"; sourceTree = "<group>"; };
-		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B613C3D991C9D73C6691B09919E9EB10 /* Insets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Insets.swift; path = StickySugar/Classes/Insets.swift; sourceTree = "<group>"; };
 		B7E388CFB3D9E071FD55C09955633543 /* SugarBuilder+Aspecting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SugarBuilder+Aspecting.swift"; path = "StickySugar/Classes/SugarBuilder+Aspecting.swift"; sourceTree = "<group>"; };
 		B7F3DCA8C8B291A761D5251C85C45675 /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
@@ -143,6 +144,9 @@
 		D97545C39C4A5EE2631DD9FFECE76A40 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		DB8631D40E9F5802FE7F60D359653FE6 /* Pods-StickySugar_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-StickySugar_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		E058FDCF7AF683C203558E4BCE89CDE3 /* Pods-StickySugar_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-StickySugar_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E174449C22072E86006E2063 /* UIView+StackSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+StackSugar.swift"; path = "StickySugar/Classes/UIView+StackSugar.swift"; sourceTree = "<group>"; };
+		E174449F22072F84006E2063 /* UIViewController+StackSugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+StackSugar.swift"; path = "StickySugar/Classes/UIViewController+StackSugar.swift"; sourceTree = "<group>"; };
+		E17444A122072F96006E2063 /* UIView+ScrollSugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIView+ScrollSugar.swift"; path = "StickySugar/Classes/UIView+ScrollSugar.swift"; sourceTree = "<group>"; };
 		E37899BD4B349060AA147E2A3721D3A2 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
 		F42C47BD64E44675D5235CFEE3545DE1 /* StickySugar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StickySugar-prefix.pch"; sourceTree = "<group>"; };
 		F6DA36E1CA4C3D87F6E85F737FA483C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -203,7 +207,6 @@
 				2D3CB2CF128424468A94881E5F11806D /* Support Files */,
 				99E46DD4AB2256791F111C718CB0EEF8 /* SwiftSupport */,
 			);
-			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -264,7 +267,9 @@
 				343B51B9009F0F0229E3F633B67AB9A0 /* SugarView.swift */,
 				3048D2858BEDAC89B56AD51270511C86 /* UIVIew+Sugar.swift */,
 				A2BD32127BFF7C76E1CAC25EE0E1A540 /* UIViewController+ScrollSugar.swift */,
-				56B3E54C3449FF3A95F78D16929E3FA8 /* UIViewController+StackSugar.swift */,
+				E174449F22072F84006E2063 /* UIViewController+StackSugar.swift */,
+				E174449C22072E86006E2063 /* UIView+StackSugar.swift */,
+				E17444A122072F96006E2063 /* UIView+ScrollSugar.swift */,
 				C42E01C221A6D8BDB336A231BCF7B3E0 /* Pod */,
 				7E4E47ECF2E981B583F93CE3B7E6CFBD /* Support Files */,
 			);
@@ -611,16 +616,18 @@
 				2571ED57576A4148862C7AAFF428980C /* Insets.swift in Sources */,
 				FE6E0F93840800DE9A1B4F17ED7D2330 /* MultipleSugarBuilder.swift in Sources */,
 				293FE70E04489FB8943925C925BB3459 /* SingleSugarBuilder.swift in Sources */,
+				E17444A422073032006E2063 /* UIViewController+StackSugar.swift in Sources */,
 				04FA38E76475F4A7BAFA73E4F3975F8F /* StickySugar-dummy.m in Sources */,
 				82F26EA5D2E30AC1F89764D913139B35 /* SugarBuilder+Aligning.swift in Sources */,
+				E17444A322072FA5006E2063 /* UIView+ScrollSugar.swift in Sources */,
 				70626988546BB48C5C644AA2C57B3916 /* SugarBuilder+Aspecting.swift in Sources */,
 				FC5BC8FBDEF840C8E1DBA88584BF65E8 /* SugarBuilder+Centering.swift in Sources */,
 				5A2F1A344DF7E33375A9D7BE30E4F7B7 /* SugarBuilder+Sizing.swift in Sources */,
 				8F3AA9835D2BCD537FB7653159518E20 /* SugarBuilder.swift in Sources */,
+				E174449E22072EB3006E2063 /* UIView+StackSugar.swift in Sources */,
 				AE14497DBADFD31B8DAE226444A29B12 /* SugarView.swift in Sources */,
 				83F3145FC0DF22690EEDFC04260FD9AE /* UIVIew+Sugar.swift in Sources */,
 				2A773A3968DB1F77FE447DAB9AD84FF0 /* UIViewController+ScrollSugar.swift in Sources */,
-				0B7185D9B338B97B5328CD519B5DAF8C /* UIViewController+StackSugar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1025,8 +1032,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
