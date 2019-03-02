@@ -16,16 +16,16 @@ extension SugarBuilder {
     public func center(to view: UIView, axes: [NSLayoutConstraint.Axis] = [.horizontal, .vertical], offset: CGPoint = .zero) -> MultipleSugarBuilder<ViewType>  {
         var cnsts = [NSLayoutConstraint]()
         if axes.contains(.horizontal) {
-            let cnst = workingView.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: offset.x)
+            let cnst = sugarView.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: offset.x)
             cnst.identifier = ConstraintIdentifier.centerX.rawValue
             cnsts.append(cnst)
         }
         if axes.contains(.vertical) {
-            let cnst = workingView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: offset.y)
+            let cnst = sugarView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: offset.y)
             cnst.identifier = ConstraintIdentifier.centerY.rawValue
             cnsts.append(cnst)
         }
         
-        return MultipleSugarBuilder(workingView, lastSugar: cnsts)
+        return MultipleSugarBuilder(sugarView, lastSugar: cnsts)
     }
 }

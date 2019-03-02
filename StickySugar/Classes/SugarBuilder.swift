@@ -21,11 +21,11 @@ internal enum ConstraintIdentifier: String {
 
 public class SugarBuilder<ViewType: UIView> {
     
-    let workingView: ViewType
+    public let sugarView: ViewType
     
     init(_ view: ViewType) {
-        self.workingView = view
-        makeLayoutable(workingView)
+        self.sugarView = view
+        makeLayoutable(sugarView)
     }
     
     private func makeLayoutable(_ view: UIView) {
@@ -33,8 +33,8 @@ public class SugarBuilder<ViewType: UIView> {
     }
     
     internal func superview() -> UIView {
-        guard let superview = workingView.superview else {
-            fatalError("The view dont have a superview (yet). View: \(workingView.self)")
+        guard let superview = sugarView.superview else {
+            fatalError("The view dont have a superview (yet). View: \(sugarView.self)")
         }
         
         return superview
@@ -52,11 +52,11 @@ public class SugarBuilder<ViewType: UIView> {
         var cnsts = [NSLayoutConstraint]()
         if edges.contains(.top) {
             if relativeToSafeArea, #available(iOS 11.0, *) {
-                let cnst = workingView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: insets.value.top)
+                let cnst = sugarView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: insets.value.top)
                 cnst.identifier = ConstraintIdentifier.top.rawValue
                 cnsts.append(cnst)
             } else {
-                let cnst = workingView.topAnchor.constraint(equalTo: view.topAnchor, constant: insets.value.top)
+                let cnst = sugarView.topAnchor.constraint(equalTo: view.topAnchor, constant: insets.value.top)
                 cnst.identifier = ConstraintIdentifier.top.rawValue
                 cnsts.append(cnst)
             }
@@ -64,11 +64,11 @@ public class SugarBuilder<ViewType: UIView> {
         
         if edges.contains(.trailing) {
             if relativeToSafeArea, #available(iOS 11.0, *){
-                let cnst = workingView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -insets.value.right)
+                let cnst = sugarView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -insets.value.right)
                 cnst.identifier = ConstraintIdentifier.trailing.rawValue
                 cnsts.append(cnst)
             } else {
-                let cnst = workingView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -insets.value.right)
+                let cnst = sugarView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -insets.value.right)
                 cnst.identifier = ConstraintIdentifier.trailing.rawValue
                 cnsts.append(cnst)
             }
@@ -76,12 +76,12 @@ public class SugarBuilder<ViewType: UIView> {
         
         if edges.contains(.bottom) {
             if relativeToSafeArea, #available(iOS 11.0, *) {
-                let cnst = workingView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -insets.value.bottom)
+                let cnst = sugarView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -insets.value.bottom)
                 cnst.identifier = ConstraintIdentifier.bottom.rawValue
                 cnsts.append(cnst)
                 
             } else {
-                let cnst = workingView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -insets.value.bottom)
+                let cnst = sugarView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -insets.value.bottom)
                 cnst.identifier = ConstraintIdentifier.bottom.rawValue
                 cnsts.append(cnst)
             }
@@ -89,37 +89,37 @@ public class SugarBuilder<ViewType: UIView> {
         
         if edges.contains(.leading) {
             if relativeToSafeArea, #available(iOS 11.0, *) {
-                let cnst = workingView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant:insets.value.left)
+                let cnst = sugarView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant:insets.value.left)
                 cnst.identifier = ConstraintIdentifier.leading.rawValue
                 cnsts.append(cnst)
             } else {
-                let cnst = workingView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: insets.value.left)
+                let cnst = sugarView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: insets.value.left)
                 cnst.identifier = ConstraintIdentifier.leading.rawValue
                 cnsts.append(cnst)
             }
         }
         
-        return MultipleSugarBuilder(workingView, lastSugar: cnsts)
+        return MultipleSugarBuilder(sugarView, lastSugar: cnsts)
     }
     
     private func stickToEdge(edge: Edge, ofView view: UIView, insets: Insets = .zero) -> SingleSugarBuilder<ViewType> {
         let cnst: NSLayoutConstraint!
         switch edge {
         case .top:
-            cnst = workingView.bottomAnchor.constraint(equalTo: view.topAnchor, constant: -insets.value.bottom)
+            cnst = sugarView.bottomAnchor.constraint(equalTo: view.topAnchor, constant: -insets.value.bottom)
             cnst.identifier = ConstraintIdentifier.bottom.rawValue
         case .bottom:
-            cnst = workingView.topAnchor.constraint(equalTo: view.bottomAnchor, constant: insets.value.top)
+            cnst = sugarView.topAnchor.constraint(equalTo: view.bottomAnchor, constant: insets.value.top)
             cnst.identifier = ConstraintIdentifier.top.rawValue
         case .leading:
-            cnst = workingView.trailingAnchor.constraint(equalTo: view.leadingAnchor, constant: -insets.value.right)
+            cnst = sugarView.trailingAnchor.constraint(equalTo: view.leadingAnchor, constant: -insets.value.right)
             cnst.identifier = ConstraintIdentifier.trailing.rawValue
         case .trailing:
-            cnst = workingView.leadingAnchor.constraint(equalTo: view.trailingAnchor, constant: insets.value.left)
+            cnst = sugarView.leadingAnchor.constraint(equalTo: view.trailingAnchor, constant: insets.value.left)
             cnst.identifier = ConstraintIdentifier.leading.rawValue
         }
         
-        return SingleSugarBuilder(workingView, lastSugar: cnst)
+        return SingleSugarBuilder(sugarView, lastSugar: cnst)
     }
     
     @discardableResult
