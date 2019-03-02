@@ -40,21 +40,21 @@ public class SingleSugarBuilder<ViewType: UIView>: SugarBuilder<ViewType> {
 
     @discardableResult
     public func huggingResistance(_ priority: UILayoutPriority, for axis: NSLayoutConstraint.Axis) -> SingleSugarBuilder<ViewType> {
-        workingView.setContentHuggingPriority(priority, for: axis)
+        sugarView.setContentHuggingPriority(priority, for: axis)
         
         return self
     }
     
     @discardableResult
     public func compressionResistance(_ priority: UILayoutPriority, for axis: NSLayoutConstraint.Axis) -> SingleSugarBuilder<ViewType> {
-        workingView.setContentCompressionResistancePriority(priority, for: axis)
+        sugarView.setContentCompressionResistancePriority(priority, for: axis)
         
         return self
     }
     
     @discardableResult
     public func configure(_ configuration: @escaping (ViewType) -> Void) -> SingleSugarBuilder<ViewType> {
-        configuration(workingView)
+        configuration(sugarView)
         return self
     }
     
@@ -67,6 +67,6 @@ public class SingleSugarBuilder<ViewType: UIView>: SugarBuilder<ViewType> {
         
         let cnst = NSLayoutConstraint(item: first, attribute: lastSugar.firstAttribute, relatedBy: relation, toItem: second, attribute: lastSugar.secondAttribute, multiplier: lastSugar.multiplier, constant: lastSugar.multiplier)
         
-        return SingleSugarBuilder(workingView, lastSugar: cnst)
+        return SingleSugarBuilder(sugarView, lastSugar: cnst)
     }
 }

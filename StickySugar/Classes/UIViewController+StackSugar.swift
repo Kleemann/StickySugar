@@ -9,7 +9,7 @@ import UIKit
 
 extension UIViewController {
     @discardableResult
-    public func stack(_ axis: NSLayoutConstraint.Axis, spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, views: [UIView], viewsLayout: (() -> Void)? = nil) -> UIStackView {
+    public func stack(_ axis: NSLayoutConstraint.Axis, spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, views: UIView...) -> UIStackView {
         let stackView = UIStackView()
         stackView.axis = axis
         stackView.spacing = spacing
@@ -22,8 +22,6 @@ extension UIViewController {
             $0.removeFromSuperview()
             stackView.addArrangedSubview($0)
         }
-        
-        viewsLayout?()
         
         return stackView
     }

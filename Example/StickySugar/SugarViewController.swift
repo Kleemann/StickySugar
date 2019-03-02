@@ -79,25 +79,31 @@ class SugarViewController: UIViewController {
             .stickToParentEdges(edges: [.leading], insets: 20).size(toHeight: 128)
             .aspectWidthToHeight()
         
-        stack(.vertical, views: [titleLabel, subtitleLabel])
+        stack(.vertical, views: titleLabel, subtitleLabel)
             .sugar
             .align(to: iconImage, edges: [.top])
             .stickLeadingToTrailing(of: iconImage, insets: 17)
             .stickToParentEdges(edges: [.trailing], insets: 20)
             .compressionResistance(.defaultLow, for: .vertical)
         
-        stack(.horizontal, distribution: .equalSpacing, alignment: .center, views: [actionButton, moreButton]) {
-            let actionBtnHeight:CGFloat = 30
-            self.actionButton.sugar
+        let actionBtnHeight:CGFloat = 30
+        let moreBtnHeight:CGFloat = 28
+        
+        stack(.horizontal, distribution: .equalSpacing, alignment: .center, views:
+            actionButton.sugar
                 .size(toWidth: 74, height: actionBtnHeight)
-            self.actionButton.layer.cornerRadius = actionBtnHeight/2
-            
-            let moreBtnHeight:CGFloat = 28
-            self.moreButton.sugar
+                .configure({
+                    $0.layer.cornerRadius = actionBtnHeight/2
+                })
+                .sugarView,
+            moreButton.sugar
                 .size(toHeight: moreBtnHeight)
                 .aspectWidthToHeight()
-            self.moreButton.layer.cornerRadius = moreBtnHeight/2
-        }.sugar
+                .configure({
+                    $0.layer.cornerRadius = moreBtnHeight/2
+                })
+                .sugarView
+        ).sugar
             .align(to: iconImage, edges: [.bottom])
             .stickLeadingToTrailing(of: iconImage, insets: 17)
             .stickToParentEdges(edges: [.trailing], insets: 20)

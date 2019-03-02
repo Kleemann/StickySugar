@@ -9,28 +9,28 @@ extension SugarBuilder {
     
     @discardableResult
     public func size(toWidth width: CGFloat, height: CGFloat) -> MultipleSugarBuilder<ViewType>  {
-        let width = workingView.widthAnchor.constraint(equalToConstant: width)
+        let width = sugarView.widthAnchor.constraint(equalToConstant: width)
         width.identifier = ConstraintIdentifier.width.rawValue
-        let height = workingView.heightAnchor.constraint(equalToConstant: height)
+        let height = sugarView.heightAnchor.constraint(equalToConstant: height)
         height.identifier = ConstraintIdentifier.height.rawValue
         
-        return MultipleSugarBuilder(workingView, lastSugar: [width, height])
+        return MultipleSugarBuilder(sugarView, lastSugar: [width, height])
     }
     
     @discardableResult
     public func size(toWidth width: CGFloat) -> SingleSugarBuilder<ViewType> {
-        let constraint = workingView.widthAnchor.constraint(equalToConstant: width)
+        let constraint = sugarView.widthAnchor.constraint(equalToConstant: width)
         constraint.identifier = ConstraintIdentifier.width.rawValue
         
-        return SingleSugarBuilder(workingView, lastSugar: constraint)
+        return SingleSugarBuilder(sugarView, lastSugar: constraint)
     }
     
     @discardableResult
     public func size(toHeight height: CGFloat) -> SingleSugarBuilder<ViewType> {
-        let constraint = workingView.heightAnchor.constraint(equalToConstant: height)
+        let constraint = sugarView.heightAnchor.constraint(equalToConstant: height)
         constraint.identifier = ConstraintIdentifier.height.rawValue
         
-        return SingleSugarBuilder(workingView, lastSugar: constraint)
+        return SingleSugarBuilder(sugarView, lastSugar: constraint)
     }
     
     @discardableResult
@@ -38,13 +38,13 @@ extension SugarBuilder {
         var cnst: NSLayoutConstraint!
         switch size {
         case .height:
-            cnst = workingView.widthAnchor.constraint(equalTo: view.heightAnchor, constant: insets.value.top)
+            cnst = sugarView.widthAnchor.constraint(equalTo: view.heightAnchor, constant: insets.value.top)
         case .width:
-            cnst = workingView.widthAnchor.constraint(equalTo: view.widthAnchor, constant: insets.value.left)
+            cnst = sugarView.widthAnchor.constraint(equalTo: view.widthAnchor, constant: insets.value.left)
         }
         cnst.identifier = ConstraintIdentifier.width.rawValue
         
-        return SingleSugarBuilder(workingView, lastSugar: cnst)
+        return SingleSugarBuilder(sugarView, lastSugar: cnst)
     }
     
     @discardableResult
@@ -57,13 +57,13 @@ extension SugarBuilder {
         var cnst: NSLayoutConstraint!
         switch size {
         case .height:
-            cnst = workingView.heightAnchor.constraint(equalTo: view.heightAnchor, constant: insets.value.top)
+            cnst = sugarView.heightAnchor.constraint(equalTo: view.heightAnchor, constant: insets.value.top)
         case .width:
-            cnst = workingView.heightAnchor.constraint(equalTo: view.widthAnchor, constant: insets.value.top)
+            cnst = sugarView.heightAnchor.constraint(equalTo: view.widthAnchor, constant: insets.value.top)
         }
         cnst.identifier = ConstraintIdentifier.height.rawValue
         
-        return SingleSugarBuilder(workingView, lastSugar: cnst)
+        return SingleSugarBuilder(sugarView, lastSugar: cnst)
     }
     
     @discardableResult

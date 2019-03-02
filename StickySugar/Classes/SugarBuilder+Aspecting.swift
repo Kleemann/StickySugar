@@ -9,18 +9,18 @@ extension SugarBuilder {
 
     @discardableResult
     public func aspectWidthToHeight(_ ratio: Double = 1) -> SingleSugarBuilder<ViewType> {
-        let cnst = workingView.heightAnchor.constraint(equalTo: workingView.widthAnchor, multiplier: CGFloat(1.0/ratio))
+        let cnst = sugarView.heightAnchor.constraint(equalTo: sugarView.widthAnchor, multiplier: CGFloat(1.0/ratio))
         cnst.identifier = ConstraintIdentifier.height.rawValue
         
-        return SingleSugarBuilder(workingView, lastSugar: cnst)
+        return SingleSugarBuilder(sugarView, lastSugar: cnst)
     }
     
     @discardableResult
     public func aspectHeightToWidth(_ ratio: Double = 1) -> SingleSugarBuilder<ViewType> {
-        let cnst = workingView.widthAnchor.constraint(equalTo: workingView.heightAnchor, multiplier: CGFloat(1.0/ratio))
+        let cnst = sugarView.widthAnchor.constraint(equalTo: sugarView.heightAnchor, multiplier: CGFloat(1.0/ratio))
         cnst.identifier = ConstraintIdentifier.width.rawValue
         
-        return SingleSugarBuilder(workingView, lastSugar: cnst)
+        return SingleSugarBuilder(sugarView, lastSugar: cnst)
     }
 }
 
