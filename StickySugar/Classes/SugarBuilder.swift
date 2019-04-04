@@ -7,8 +7,30 @@
 
 import UIKit
 
-public enum Edge: CaseIterable {
+public enum Edge: CaseIterable, Equatable {
     case top, trailing, bottom, leading
+    
+    public static var all: [Edge] {
+        return Edge.allCases
+    }
+    
+    public static func allExcept(_ edges: Edge...) -> [Edge] {
+        return Edge.all.filter {
+            return !edges.contains($0)
+        }
+    }
+}
+
+public extension Array where Element == Edge {
+    public static var all: [Element] {
+        return Edge.all
+    }
+    
+    public static func allExcept(_ edges: Element...) -> [Element] {
+        return Edge.all.filter {
+            return !edges.contains($0)
+        }
+    }
 }
 
 public enum Size {
