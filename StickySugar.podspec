@@ -28,5 +28,5 @@ Pod::Spec.new do |s|
   s.source_files = 'StickySugar/Classes/**/*'
   
   # Ensure the correct version of Swift is used
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
 end
