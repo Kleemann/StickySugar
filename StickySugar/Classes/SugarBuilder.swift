@@ -22,11 +22,11 @@ public enum Edge: CaseIterable, Equatable {
 }
 
 public extension Array where Element == Edge {
-    public static var all: [Element] {
+    static var all: [Element] {
         return Edge.all
     }
     
-    public static func allExcept(_ edges: Element...) -> [Element] {
+    static func allExcept(_ edges: Element...) -> [Element] {
         return Edge.all.filter {
             return !edges.contains($0)
         }

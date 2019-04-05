@@ -67,6 +67,8 @@ final private class SugarScrollView: UIScrollView {
             containerView.heightAnchor.constraint(equalTo: heightAnchor).isActive = true
         case .vertical:
             containerView.widthAnchor.constraint(equalTo: widthAnchor).isActive = true
+        @unknown default:
+            break;
         }
         
         onLayoutSubviews?(self)
