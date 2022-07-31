@@ -34,4 +34,12 @@ public struct Insets: ExpressibleByFloatLiteral, ExpressibleByIntegerLiteral {
     public static func right(_ right: CGFloat) -> Insets {
         return .init(top: 0, left: 0, bottom: 0, right: right)
     }
+    
+    public static func horizontal(_ value: CGFloat) -> Insets {
+        return .init(top: 0, left: value, bottom: 0, right: value)
+    }
+    
+    public static func vertical(_ value: CGFloat) -> Insets {
+        return .init(top: value, left: 0, bottom: value, right: 0)
+    }
 }
