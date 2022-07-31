@@ -1,13 +1,6 @@
-//
-//  SingleSugarBuilder.swift
-//  StickySugar
-//
-//  Created by Mads Kleemann on 26/01/2019.
-//
-
 import UIKit
 
-public class SingleSugarBuilder<ViewType: UIView>: SugarBuilder<ViewType> {
+public class SingleSugarBuilder<ViewType>: SugarBuilder<ViewType> where ViewType: UIView {
  
     internal var lastSugar: NSLayoutConstraint
     
@@ -26,6 +19,13 @@ public class SingleSugarBuilder<ViewType: UIView>: SugarBuilder<ViewType> {
     
     @discardableResult
     public func assign(to: inout NSLayoutConstraint) -> SingleSugarBuilder<ViewType> {
+        to = lastSugar
+        
+        return self
+    }
+    
+    @discardableResult
+    public func assign(to: inout NSLayoutConstraint?) -> SingleSugarBuilder<ViewType> {
         to = lastSugar
         
         return self

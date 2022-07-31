@@ -1,10 +1,3 @@
-//
-//  Insets.swift
-//  Cheftography
-//
-//  Created by Mads Kleemann on 20/10/2018.
-//
-
 import UIKit
 import Foundation
 

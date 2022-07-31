@@ -1,13 +1,6 @@
-//
-//  SugarBuilder+Multiple.swift
-//  StickySugar
-//
-//  Created by Mads Kleemann on 26/01/2019.
-//
-
 import UIKit
 
-public class MultipleSugarBuilder<ViewType: UIView>: SugarBuilder<ViewType> {
+public class MultipleSugarBuilder<ViewType>: SugarBuilder<ViewType> where ViewType: UIView {
     
     internal var lastSugar: [NSLayoutConstraint]
     

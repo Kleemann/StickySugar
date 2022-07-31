@@ -1,10 +1,3 @@
-//
-//  SugarBuilder.swift
-//  StickySugar
-//
-//  Created by Mads Kleemann on 26/01/2019.
-//
-
 import UIKit
 
 public enum Edge: CaseIterable, Equatable {
@@ -41,7 +34,7 @@ internal enum ConstraintIdentifier: String {
     case top, bottom, leading, trailing, centerX, centerY, width, height
 }
 
-public class SugarBuilder<ViewType: UIView> {
+public class SugarBuilder<ViewType> where ViewType: UIView {
     
     public let sugarView: ViewType
     
@@ -56,7 +49,7 @@ public class SugarBuilder<ViewType: UIView> {
     
     internal func superview() -> UIView {
         guard let superview = sugarView.superview else {
-            fatalError("The view dont have a superview (yet). View: \(sugarView.self)")
+            fatalError("The view don't have a superview (yet). View: \(sugarView.self)")
         }
         
         return superview

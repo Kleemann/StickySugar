@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol SugarView: class {}
+public protocol SugarView: AnyObject {}
 
 extension UIView: SugarView {}
 

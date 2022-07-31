@@ -8,7 +8,6 @@
 import UIKit
 
 extension UIView {
-    @discardableResult
     public func stack(_ axis: NSLayoutConstraint.Axis, spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, views: [UIView], viewsLayout: (() -> Void)? = nil) -> UIStackView {
         let stackView = UIStackView()
         stackView.axis = axis
@@ -28,96 +27,58 @@ extension UIView {
         return stackView
     }
     
-    @discardableResult
+    // MARK: - Variadic
+
     public func stack(_ axis: NSLayoutConstraint.Axis, spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, views: UIView..., viewsLayout: (() -> Void)? = nil) -> UIStackView {
         return stack(axis, spacing: spacing, distribution: distribution, alignment: alignment, views: views, viewsLayout: viewsLayout)
     }
-    
-    @discardableResult
+
     public func VSugarStack(spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, _ views: UIView..., viewsLayout: (() -> Void)? = nil) -> UIStackView {
         return stack(.vertical, spacing: spacing, distribution: distribution, alignment: alignment, views: views, viewsLayout: viewsLayout)
     }
-    
-    @discardableResult
-    public func VSugarStack<V: ViewsBuildable>(spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, _ views: () -> V, viewsLayout: (() -> Void)? = nil) -> UIStackView {
-        return stack(.vertical, spacing: spacing, distribution: distribution, alignment: alignment, views: views().buildViews(), viewsLayout: viewsLayout)
-    }
-    
-    @discardableResult
+
     public func HSugarStack(spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, _ views: UIView..., viewsLayout: (() -> Void)? = nil) -> UIStackView {
         return stack(.horizontal, spacing: spacing, distribution: distribution, alignment: alignment, views: views, viewsLayout: viewsLayout)
     }
     
-    @discardableResult
-    public func HSugarStack<V: ViewsBuildable>(spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, _ views: () -> V, viewsLayout: (() -> Void)? = nil) -> UIStackView {
-        return stack(.horizontal, spacing: spacing, distribution: distribution, alignment: alignment, views: views().buildViews(), viewsLayout: viewsLayout)
+    // MARK: For SugarBuilders
+    
+    public func VSugarStack<V>(spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, _ views: SugarBuilder<V>..., viewsLayout: (() -> Void)? = nil) -> UIStackView where V: UIView {
+        return stack(.vertical, spacing: spacing, distribution: distribution, alignment: alignment, views: views.map(\.sugarView), viewsLayout: viewsLayout)
+    }
+
+    public func HSugarStack<V>(spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, _ views: SugarBuilder<V>..., viewsLayout: (() -> Void)? = nil) -> UIStackView where V: UIView {
+        return stack(.horizontal, spacing: spacing, distribution: distribution, alignment: alignment, views: views.map(\.sugarView), viewsLayout: viewsLayout)
     }
 }
 
 // Convience for also calling stacking methods from a viewController
 extension UIViewController {
-    @discardableResult
     public func stack(_ axis: NSLayoutConstraint.Axis, spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, views: [UIView], viewsLayout: (() -> Void)? = nil) -> UIStackView {
         return view.stack(axis, spacing: spacing, distribution: distribution, alignment: alignment, views: views, viewsLayout: viewsLayout)
     }
     
-    @discardableResult
+    // MARK: - Variadic
+
     public func stack(_ axis: NSLayoutConstraint.Axis, spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, views: UIView..., viewsLayout: (() -> Void)? = nil) -> UIStackView {
         return stack(axis, spacing: spacing, distribution: distribution, alignment: alignment, views: views, viewsLayout: viewsLayout)
     }
        
-    @discardableResult
     public func VSugarStack(spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, _ views: UIView..., viewsLayout: (() -> Void)? = nil) -> UIStackView {
         return stack(.vertical, spacing: spacing, distribution: distribution, alignment: alignment, views: views, viewsLayout: viewsLayout)
     }
-    
-    @discardableResult
-    public func VSugarStack<V: ViewsBuildable>(spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, _ views: () -> V, viewsLayout: (() -> Void)? = nil) -> UIStackView {
-        return stack(.vertical, spacing: spacing, distribution: distribution, alignment: alignment, views: views().buildViews(), viewsLayout: viewsLayout)
-    }
-    
-    @discardableResult
+
     public func HSugarStack(spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, _ views: UIView..., viewsLayout: (() -> Void)? = nil) -> UIStackView {
         return stack(.horizontal, spacing: spacing, distribution: distribution, alignment: alignment, views: views, viewsLayout: viewsLayout)
     }
     
-    @discardableResult
-    public func HSugarStack<V: ViewsBuildable>(spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, _ views: () -> V, viewsLayout: (() -> Void)? = nil) -> UIStackView {
-        return stack(.horizontal, spacing: spacing, distribution: distribution, alignment: alignment, views: views().buildViews(), viewsLayout: viewsLayout)
+    // MARK: For SugarBuilders
+    
+    public func VSugarStack<V>(spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, _ views: SugarBuilder<V>..., viewsLayout: (() -> Void)? = nil) -> UIStackView where V: UIView {
+        return stack(.vertical, spacing: spacing, distribution: distribution, alignment: alignment, views: views.map(\.sugarView), viewsLayout: viewsLayout)
+    }
+
+    public func HSugarStack<V>(spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, _ views: SugarBuilder<V>..., viewsLayout: (() -> Void)? = nil) -> UIStackView where V: UIView {
+        return stack(.horizontal, spacing: spacing, distribution: distribution, alignment: alignment, views: views.map(\.sugarView), viewsLayout: viewsLayout)
     }
 }
-
-//// Convience for also calling stacking methods from a UICollectionViewCell (adding to contentView)
-//
-//extension UICollectionViewCell {
-//    @discardableResult
-//       public func stack(_ axis: NSLayoutConstraint.Axis, spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, views: [UIView], viewsLayout: (() -> Void)? = nil) -> UIStackView {
-//           return contentView.stack(axis, spacing: spacing, distribution: distribution, alignment: alignment, views: views, viewsLayout: viewsLayout)
-//       }
-//
-//       @discardableResult
-//       public func stack(_ axis: NSLayoutConstraint.Axis, spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, views: UIView..., viewsLayout: (() -> Void)? = nil) -> UIStackView {
-//           return contentView.stack(axis, spacing: spacing, distribution: distribution, alignment: alignment, views: views, viewsLayout: viewsLayout)
-//       }
-//
-//       @discardableResult
-//       public func VSugarStack(spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, _ views: UIView..., viewsLayout: (() -> Void)? = nil) -> UIStackView {
-//           return contentView.stack(.vertical, spacing: spacing, distribution: distribution, alignment: alignment, views: views, viewsLayout: viewsLayout)
-//       }
-//
-//       @discardableResult
-//       public func VSugarStack<V: ViewsBuildable>(spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, _ views: () -> V, viewsLayout: (() -> Void)? = nil) -> UIStackView {
-//           return contentView.stack(.vertical, spacing: spacing, distribution: distribution, alignment: alignment, views: views().buildViews(), viewsLayout: viewsLayout)
-//       }
-//
-//       @discardableResult
-//       public func HSugarStack(spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, _ views: UIView..., viewsLayout: (() -> Void)? = nil) -> UIStackView {
-//           return contentView.stack(.horizontal, spacing: spacing, distribution: distribution, alignment: alignment, views: views, viewsLayout: viewsLayout)
-//       }
-//
-//       @discardableResult
-//       public func HSugarStack<V: ViewsBuildable>(spacing: CGFloat = 0, distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, _ views: () -> V, viewsLayout: (() -> Void)? = nil) -> UIStackView {
-//        return contentView.stack(.horizontal, spacing: spacing, distribution: distribution, alignment: alignment, views: views().buildViews(), viewsLayout: viewsLayout)
-//       }
-//}
-
